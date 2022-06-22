@@ -11,9 +11,9 @@ public class Main {
         while (userInput != 0) {
             // обработка разных случаев
             if (userInput == 1) { // 1. Ввести количество шагов за определённый день
-                int month =0;
-                int day = 0;
-                int steps = 0;
+                int month;
+                int day;
+                int steps;
 
                 while (true){
                     System.out.println("Введите месяц от 1 до 12");
@@ -45,7 +45,7 @@ public class Main {
             }
 
             if (userInput == 2) { // 2. Напечатать статистику за определённый месяц
-               int month = 0;
+               int month;
                 while (true){
                     System.out.println("Введите месяц от 1 до 12");
                     month = scanner.nextInt();

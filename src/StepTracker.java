@@ -1,5 +1,5 @@
 public class StepTracker {
-    int TargetNumberOfStepsPerDay = 10000; // Целевое количество шагов в день.
+    int targetNumberOfStepsPerDay = 10000; // Целевое количество шагов в день.
 
     MonthData[] monthToData;
 
@@ -31,7 +31,7 @@ public class StepTracker {
             if (steps > maxSteps){
                 maxSteps = steps;
             }
-            if (steps >= TargetNumberOfStepsPerDay){
+            if (steps >= targetNumberOfStepsPerDay){
                 series = series + 1;
             }
             else {
@@ -51,7 +51,7 @@ public class StepTracker {
     }
     public boolean setTargetNumberOfStepsPerDay (int value){
         if (value >= 0) {
-            TargetNumberOfStepsPerDay = value;
+            targetNumberOfStepsPerDay = value;
             return true;
         }
         return false;
